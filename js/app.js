@@ -102,7 +102,7 @@ function questionSeven(){
     for(var i = 0; i < countriesLived.length; i++){
       if (countriesLived[i] === user){
         arrayTurns--;
-        alert('You guessed: ' + user + '. That\'s right! Now you have ' + arrayTurns + ' turns left.');
+        alert('You guessed: ' + user + '. That\'s right! I have lived in the United States, Scotland, England and Italy!');
         score++;
         correctGuess = true;
 
