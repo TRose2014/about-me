@@ -1,4 +1,4 @@
-/* body{
+body{
     background-color: #fff0b3;
 }
 
@@ -16,11 +16,11 @@ h1{
 section{
     background-color: aqua;
     margin-left: 25%;
-    height: 200px;
+    height: 350px;
     width: 50%;
 }
 
 button{
     margin-top: 13%;
     margin-left: 8%;
-} */
+}
