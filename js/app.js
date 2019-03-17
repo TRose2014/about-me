@@ -1,12 +1,15 @@
 'use strict';
 
 var score = 0;
-var name;
+// eslint-disable-next-line no-redeclare
+var name = prompt('Whats your name?');
+var thankYou = alert('Hi ' + name + '!, Welcome to my site. Enjoy!');
 
-function name1(){
-  name = prompt('Whats your name?');
-}
+// function name1(){
+//   name = prompt('Whats your name?');
+// }
 
+//Button One -  Scaared of Dogs?
 function questionOne(){
   var isScaredOfDogs = prompt('Am I scared of big dogs?');
   if (isScaredOfDogs.toLowerCase() === 'yes' || isScaredOfDogs.toLowerCase() === 'y'){
@@ -18,6 +21,8 @@ function questionOne(){
   console.log(isScaredOfDogs);
 }
 
+
+//Button Two - Watch Football?
 function questionTwo(){
   var likesFootball = prompt('Do I enjoy watching football?');
   if(likesFootball.toLowerCase() === 'yes' || likesFootball.toLowerCase() === 'y'){
@@ -29,6 +34,8 @@ function questionTwo(){
   console.log(likesFootball);
 }
 
+
+//Button Three - Like Cheese?
 function questionThree(){
   var likesCheese = prompt('Do I like cheese?');
   if(likesCheese.toLowerCase() === 'no' || likesCheese.toLowerCase() === 'n'){
@@ -40,6 +47,7 @@ function questionThree(){
   console.log(likesCheese);
 }
 
+//Button Four - Like Working Out?
 function questionFour(){
   var likesWorkingOut = prompt('Do I like working out?');
   if(likesWorkingOut.toLowerCase() === 'no' || likesWorkingOut.toLowerCase() ==='n'){
@@ -50,6 +58,8 @@ function questionFour(){
   }
   console.log(likesWorkingOut);
 }
+
+//Button Five - Like Doughnuts?
 function questionFive(){
   var likesDoughnuts = prompt('Do I like doughnuts?');
   if(likesDoughnuts.toLowerCase() === 'yes' || likesDoughnuts.toLowerCase() === 'y'){
@@ -60,6 +70,8 @@ function questionFive(){
   }
   console.log(likesDoughnuts);
 }
+
+//Button Six - Fave Number?
 function questionSix(){
   var myNum = 7;
   var turns = 4;
@@ -75,8 +87,8 @@ function questionSix(){
       turns--;
       alert('Too low, try again. You have ' + turns + ' remaining');
       guess =parseInt(prompt ('What is my number?'));
-    } if (turns <= 0) {
-      alert('Hey! I said you were out of turns cheater');
+    } if (turns < 1) {
+      alert('Hey ' + name + '! I said you were out of turns!');
     } if (guess === myNum){
       alert('OMG! You are right!');
       score++;
@@ -87,7 +99,7 @@ function questionSix(){
 }
 
 
-// // Need to still have user attempt 5 more times and count how many guesses it took
+// Button Seven - Countries I Lived?
 function questionSeven(){
   var countriesLived = ['united states', 'scotland', 'england', 'italy'];
   var arrayTurns = 5;
@@ -118,5 +130,5 @@ function questionSeven(){
 }
 
 function totalScore(){
-  alert(name + ' current score is ' + score);
+  alert(name + ', your current score is ' + score);
 }

@@ -8,74 +8,82 @@
         <link rel= "stylesheet" type="text/css" href= "./css/style.css">
     </head>    
     <body>
-        <h1>All About Tia</h1>
-        <hr />
-        <section id= "education">
-            <h3>Education</h3>
-            <ul>
-                <li>Bachelor's of Arts in International Relations</li>
-                <li>University of South Florida - Tampa, FL</li>
+        <header> 
+            <nav>
                 <ul>
-                    <li>Graduated: Dec. 2011</li>
+                    <li><a href= "#education">Education and Employment</a></li>
+                    <li><a href= "#travel">Dream Travel List</a></li>
+                    <li><a href= "#quiz">Think You Know Me?</a></li>
                 </ul>
-            <br>
-            <ul>
-                <li>Master's of Business Administration</li>
-                <li>American Public University - Charles Town, WV</li>
+            <!-- <img src= "./img/Profile-Pic.JPG"/> -->
+            </nav>
+            <h1>All About Tia</h1>
+            <img src= "./img/Profile-Pic.JPG"/>
+        </header>
+        <div id = "content">
+            <section id= "education">
+                <h3>Education</h3>
                 <ul>
-                    <li>Still Working</li>
+                    <li>Bachelor's of Arts in International Relations</li>
+                    <li>University of South Florida - Tampa, FL</li>
+                    <ul>
+                        <li>Graduated: Dec. 2011</li>
+                    </ul>
                 </ul>
-            </ul>
-            </ul>
-        </section>
-        <hr />
-        <section id= "employment">
-            <h3>Previous Employment</h3>
-            <ul>
-                <li>Boeing Employer's Credit Union</li>
-                <li>Mortgage Sales Assistant</li>
-            </ul>
-            <br>
-            <ul>
-                <li>Navy Federal Credit Union</li>
-                <li>Member Service Representative III - MLO</li>
-            </ul>
-        </section>
-        <hr />
-        <section id="travel">
-            <h3>My Top 10 Places I Plan To Visit</h3>
-            <p id= "quote"><em>Not all those who wander are lost - J.R.R Tolkien</em></p>
-            <ol>
-                <li>Iceland</li>
-                <li>Singapore</li>
-                <li>Amsterdam</li>
-                <li>Back to Italy</li>
-                <li>Dubai</li>
-                <li>Las Vegas</li>
-                <li>San Diego</li>
-                <li>Hawaii</li>
-                <li>Okinawa and Back to Japan</li>
-                <li>Philadelphia</li>
-            </ol>
-        </section>
-
-        <div class ="quiz">
-        <header>
-                    <h1>How Well Do You Know Me?</h1>
-            </header>
-            
-            <section>
-                <button onClick = "name1()">Whats your name?</button>
-                <button onClick = "questionOne()">Question 1</button>
-                <button onClick = "questionTwo()">Question 2</button>
-                <button onClick = "questionThree()">Question 3</button>
-                <button onClick = "questionFour()">Question 4</button>
-                <button onClick = "questionFive()">Question 5</button>
-                <button onClick = "questionSix()">Question 6</button>
-                <button onClick = "questionSeven()">Question 7</button>
-                <button onClick = "totalScore()">Whats my Score?</button>
+                <br>   
+                <ul>
+                    <li>Master's of Business Administration</li>
+                    <li>American Public University - Charles Town, WV</li>
+                    <ul>
+                        <li>Still Working</li>
+                    </ul>
+                </ul>
+                </ul>
+            </section>
+            <section id= "employment">
+                <h3>Previous Employment</h3>
+                <ul>
+                    <li>Boeing Employer's Credit Union</li>
+                    <li>Mortgage Sales Assistant</li>
+                </ul>
+                <br>
+                <ul>
+                    <li>Navy Federal Credit Union</li>
+                    <li>Member Service Representative III - MLO</li>
+                </ul>
+            </section>
+            <!-- <hr /> -->
+            <section id="travel">
+                <h3>My Top 10 Places I Plan To Visit</h3>
+                <p id= "quote"><em>Not all those who wander are lost - J.R.R Tolkien</em></p>
+                <ol>
+                    <li>Iceland</li>
+                    <li>Singapore</li>
+                    <li>Amsterdam</li>
+                    <li>Back to Italy</li>
+                    <li>Dubai</li>
+                    <li>Las Vegas</li>
+                    <li>San Diego</li>
+                    <li>Hawaii</li>
+                    <li>Okinawa and Back to Japan</li>
+                    <li>Philadelphia</li>
+                </ol>
+            </section>
+            <!-- <hr /> -->
+            <section id = "quiz">
+                    <h3>How Well Do You Know Me?</h3>
+                    <!-- <button onClick = "name1()">Whats your name?</button> -->
+                    <button onClick = "questionOne()">Question 1</button>
+                    <button onClick = "questionTwo()">Question 2</button>
+                    <button onClick = "questionThree()">Question 3</button>
+                    <button onClick = "questionFour()">Question 4</button>
+                    <button onClick = "questionFive()">Question 5</button>
+                    <button onClick = "questionSix()">Question 6</button>
+                    <button onClick = "questionSeven()">Question 7</button>
+                    <button id="totalScore" onClick = "totalScore()">What's My Score?</button>
             </section>
         </div>
+     
 
             <script src= "js/app.js"></script>
     </body>
