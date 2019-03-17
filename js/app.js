@@ -3,7 +3,7 @@
 var score = 0;
 // eslint-disable-next-line no-redeclare
 var name = prompt('Whats your name?');
-var thankYou = alert('Hi ' + name + '!, Welcome to my site. Enjoy!');
+var thankYou = alert('Hi ' + name + '! Welcome to my site. Enjoy!');
 
 // function name1(){
 //   name = prompt('Whats your name?');
