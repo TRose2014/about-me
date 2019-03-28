@@ -1,5 +1,5 @@
 body{
-    background-color: #cccccc;
+    background-color: #DCDCDC;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -123,7 +123,7 @@ button{
 }
 
 #totalScore{
-    background-color: fuchsia;
+    background-color: pink;
     font-size: 36px;
     margin-left: 40%;
 }
